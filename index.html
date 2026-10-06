@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Morphing blobs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="sr-only">Morphing blobs generados con código</h1>
+
+  <canvas id="stage" aria-hidden="true"></canvas>
+
+  <nav class="dock" aria-label="Presets">
+    <div class="dock__pill" id="dock">
+      <span class="dock__thumb" id="thumb" aria-hidden="true"></span>
+      <button class="dock__btn" type="button" data-preset="twinMoons">Twin Moons</button>
+      <button class="dock__btn" type="button" data-preset="eclipse">Eclipse</button>
+      <button class="dock__btn" type="button" data-preset="seafoam">Seafoam</button>
+      <button class="dock__btn" type="button" data-preset="iris">Iris</button>
+      <button class="dock__btn" type="button" data-preset="nightWindow">Night Window</button>
+      <button class="dock__btn" type="button" data-preset="sageStone">Sage Stone</button>
+      <button class="dock__btn" type="button" data-preset="goldLeaf">Gold Leaf</button>
+      <button class="dock__btn" type="button" data-preset="supernova">Supernova</button>
+    </div>
+  </nav>
+
+  <p class="fallback" id="fallback" hidden>
+    Tu navegador no pudo iniciar WebGL, que esta demo necesita para dibujar los blobs.
+  </p>
+
+  <script src="script.js"></script>
+</body>
+</html>
